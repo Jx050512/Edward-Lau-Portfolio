@@ -121,3 +121,5 @@ jobs:
             git commit -m "Sync published portfolio from Netlify"
             git push
           fi
+
+# Trigger sync after workflow creation
