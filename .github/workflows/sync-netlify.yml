@@ -1,0 +1,123 @@
+name: Sync portfolio from Netlify
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/sync-netlify.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Mirror published portfolio
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE="https://edwardlaujx-portfolio.netlify.app"
+
+          # Keep Git metadata/workflow, replace the mirrored website files.
+          find . -mindepth 1 -maxdepth 1 ! -name .git ! -name .github -exec rm -rf {} +
+
+          paths=(
+            "404.html"
+            "README.md"
+            "_headers"
+            "_redirects"
+            "about.html"
+            "assets/3-Strikes-Terror-Jr.mp3"
+            "assets/Edward-Lau-Resume.pdf"
+            "assets/favicon.svg"
+            "assets/og-preview.png"
+            "assets/sitemap.svg"
+            "contact.html"
+            "css/style.css"
+            "index.html"
+            "js/home-intro.js"
+            "js/page-content-final.js"
+            "js/script-mp3-final.js"
+            "projects.html"
+            "projects/business-calculation-receipt-system/Business_Calculation_Receipt_System_Source.zip"
+            "projects/business-calculation-receipt-system/README.md"
+            "projects/business-calculation-receipt-system/demo.html"
+            "projects/business-calculation-receipt-system/main.cpp"
+            "projects/business-calculation-receipt-system/receipts/Receipt_TX1001.txt"
+            "projects/business-calculation-receipt-system/sample-input.txt"
+            "projects/business-calculation-receipt-system/sample-output.txt"
+            "projects/cloud-infrastructure-lab/demo.css"
+            "projects/cloud-infrastructure-lab/demo.js"
+            "projects/cloud-infrastructure-lab/index.html"
+            "projects/figma-ui-prototype/01_Home_Desktop.svg"
+            "projects/figma-ui-prototype/02_About_Desktop.svg"
+            "projects/figma-ui-prototype/03_Projects_Desktop.svg"
+            "projects/figma-ui-prototype/04_Skills_Resume_Desktop.svg"
+            "projects/figma-ui-prototype/05_Contact_Desktop.svg"
+            "projects/figma-ui-prototype/06_Home_Mobile.svg"
+            "projects/figma-ui-prototype/07_Design_System_Components.svg"
+            "projects/figma-ui-prototype/Edward_Lau_Figma_Prototype_Import_Kit.zip"
+            "projects/figma-ui-prototype/README_IMPORT_TO_FIGMA.md"
+            "projects/figma-ui-prototype/preview.html"
+            "projects/fullstack-login-registration-demo/demo.css"
+            "projects/fullstack-login-registration-demo/demo.js"
+            "projects/fullstack-login-registration-demo/index.html"
+            "projects/fullstack-login-registration/.env.example"
+            "projects/fullstack-login-registration/.gitignore"
+            "projects/fullstack-login-registration/FullStack_Login_Registration_System_Source.zip"
+            "projects/fullstack-login-registration/README.md"
+            "projects/fullstack-login-registration/backend/package.json"
+            "projects/fullstack-login-registration/backend/server.js"
+            "projects/fullstack-login-registration/database/SCMS_database.sql"
+            "projects/fullstack-login-registration/frontend/dashboard.html"
+            "projects/fullstack-login-registration/frontend/login.html"
+            "projects/fullstack-login-registration/frontend/login.js"
+            "projects/fullstack-login-registration/frontend/register.html"
+            "projects/fullstack-login-registration/frontend/register.js"
+            "projects/fullstack-login-registration/frontend/style.css"
+            "projects/fullstack-login-registration/frontend/validation.js"
+            "projects/previous-personal-portfolio/about.html"
+            "projects/previous-personal-portfolio/contact.html"
+            "projects/previous-personal-portfolio/css/style.css"
+            "projects/previous-personal-portfolio/cv/Edward Lau_CV.pdf"
+            "projects/previous-personal-portfolio/education.html"
+            "projects/previous-personal-portfolio/images/profile.jpg"
+            "projects/previous-personal-portfolio/index.html"
+            "projects/student-management-system-demo/demo.css"
+            "projects/student-management-system-demo/demo.js"
+            "projects/student-management-system-demo/index.html"
+            "projects/student-management-system/Group_Assignment.py"
+            "projects/tuition-centre-management-system-demo/demo.css"
+            "projects/tuition-centre-management-system-demo/demo.js"
+            "projects/tuition-centre-management-system-demo/index.html"
+            "projects/tuition-centre-management-system/PFD1414_Edward.py"
+            "robots.txt"
+            "sitemap.xml"
+            "skills.html"
+          )
+
+          for path in "${paths[@]}"; do
+            mkdir -p "$(dirname "$path")"
+            url_path="${path// /%20}"
+            echo "Downloading $path"
+            curl --fail --location --silent --show-error "$BASE/$url_path" --output "$path"
+          done
+
+      - name: Commit synchronized site
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Sync published portfolio from Netlify"
+            git push
+          fi
