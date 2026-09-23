@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=d5a12617-9d11-496f-ae0f-f19daa7fa311
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+    <title>Member Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Custom Modal -->
+<div id="modalOverlay" class="modal-overlay">
+    <div id="modalBox" class="modal-box">
+        <h3 id="modalTitle">Message</h3>
+        <p id="modalMessage"></p>
+        <button onclick="closeModal()">OK</button>
+    </div>
+</div>
+
+<div class="container">
+    <h2>Member Login</h2>
+
+    <form id="loginForm">
+        <div class="input-group">
+            <input id="loginEmail" type="email" placeholder="Email Address" required>
+        </div>
+
+        <div class="input-group">
+            <input id="loginPassword" type="password" placeholder="Password" required>
+            <span class="toggle" onclick="togglePassword('loginPassword')">Show</span>
+        </div>
+
+        <button type="submit">Login</button>
+    </form>
+
+    <div class="link">
+        New member? <a href='/projects/fullstack-login-registration/frontend/register'>Register here</a>
+    </div>
+</div>
+
+<script src="login.js"></script>
+<script>
+function togglePassword(id) {
+    const input = document.getElementById(id);
+    input.type = input.type === "password" ? "text" : "password";
+}
+</script>
+
+</body>
+</html>

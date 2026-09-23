@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=d5a12617-9d11-496f-ae0f-f19daa7fa311
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. --><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Full-Stack Login &amp; Registration System · Edward Lau Portfolio</title>
+<link rel="stylesheet" href="demo.css">
+</head>
+<body>
+<div class="shell">
+  <div class="topbar">
+    <div class="brand"><span class="brand-mark">EL</span><span>Edward Lau · Project Demo</span></div>
+    <a class='back' href='/projects'>← Back to Projects</a>
+  </div>
+  
+<section class="hero">
+  <span class="eyebrow">Full-Stack Web Development · Interactive Workflow</span>
+  <h1>Login & Registration <span class="grad">System</span></h1>
+  <p class="muted">Portfolio demo of my original student-club authentication workflow: registration, validation, duplicate-email checking, login, dashboard access and logout.</p>
+  <div class="note">Demo note: this portfolio version runs fully in the browser so recruiters can test it without a local server. My original coursework connects the frontend to Node.js / Express APIs and a MySQL database.</div>
+</section>
+
+<div class="grid">
+  <section class="card" id="authCard">
+    <div class="auth-tabs">
+      <button class="secondary" id="tabRegister" aria-selected="true">Register</button>
+      <button class="secondary" id="tabLogin" aria-selected="false">Login</button>
+    </div>
+
+    <form id="registerForm">
+      <h2>Create Member Account</h2>
+      <label>Full Name</label><input id="regName" placeholder="Letters and spaces only">
+      <label>Email Address</label><input id="regEmail" type="email" placeholder="name@example.com">
+      <label>Phone Number</label><input id="regPhone" placeholder="10–11 digits">
+      <div class="row">
+        <div><label>Password</label><input id="regPassword" type="password" placeholder="8+ chars, uppercase, number, symbol"></div>
+        <div><label>Confirm Password</label><input id="regConfirm" type="password" placeholder="Repeat password"></div>
+      </div>
+      <div class="actions"><button class="primary" type="submit">Register</button></div>
+    </form>
+
+    <form id="loginForm" class="hidden">
+      <h2>Member Login</h2>
+      <label>Email Address</label><input id="loginEmail" type="email" placeholder="name@example.com">
+      <label>Password</label><input id="loginPassword" type="password" placeholder="Your password">
+      <div class="actions"><button class="primary" type="submit">Login</button></div>
+    </form>
+    <p id="authStatus" class="muted"></p>
+  </section>
+
+  <section class="card">
+    <h2>System Flow</h2>
+    <div class="list">
+      <div class="list-item"><span>1. Frontend validation</span><span class="code-badge">JavaScript</span></div>
+      <div class="list-item"><span>2. Registration request</span><span class="code-badge">POST /register</span></div>
+      <div class="list-item"><span>3. User storage</span><span class="code-badge">MySQL users</span></div>
+      <div class="list-item"><span>4. Login request</span><span class="code-badge">POST /login</span></div>
+      <div class="list-item"><span>5. Dashboard access</span><span class="code-badge">localStorage session</span></div>
+    </div>
+  </section>
+
+  <section class="card full hidden" id="dashboard">
+    <span class="eyebrow">Authenticated Dashboard</span>
+    <h2 id="welcome" style="font-size:34px;margin-top:10px">Welcome 🎉</h2>
+    <p class="muted">You have successfully logged in. This reproduces the dashboard flow from my coursework.</p>
+    <div class="actions"><button class="danger" id="logout">Logout</button><button class="secondary" id="resetUsers">Reset Demo Accounts</button></div>
+  </section>
+</div>
+
+  <footer>Portfolio demo mode · Built from the original coursework logic</footer>
+</div>
+<script src="demo.js"></script>
+</body></html>

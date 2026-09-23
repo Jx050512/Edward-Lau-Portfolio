@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=d5a12617-9d11-496f-ae0f-f19daa7fa311
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. --><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tuition Centre Management System · Edward Lau Portfolio</title>
+<link rel="stylesheet" href="demo.css">
+</head>
+<body>
+<div class="shell">
+  <div class="topbar">
+    <div class="brand"><span class="brand-mark">EL</span><span>Edward Lau · Project Demo</span></div>
+    <a class='back' href='/projects'>← Back to Projects</a>
+  </div>
+  
+<section class="hero">
+  <span class="eyebrow">Python / Programming · Live Demo Mode</span>
+  <h1>Tuition Centre <span class="grad">Management System</span></h1>
+  <p class="muted">Interactive browser version of my original Python coursework. It keeps the same core logic: student details, level selection, subjects, schedules, package discounts and invoice generation.</p>
+</section>
+
+<div class="grid">
+  <section class="card">
+    <h2>Student Registration</h2>
+    <div class="row">
+      <div><label>Student Name</label><input id="name" placeholder="e.g. Edward Lau"></div>
+      <div><label>Phone Number</label><input id="phone" placeholder="e.g. 0179946899"></div>
+      <div><label>Parent Name</label><input id="parent" placeholder="Parent / Guardian"></div>
+      <div><label>Emergency Contact</label><input id="emergency" placeholder="Emergency number"></div>
+    </div>
+    <label>Student Level</label>
+    <select id="level">
+      <option value="">Select level</option><option>UPSR</option><option>PT3</option><option>SPM</option>
+    </select>
+    <div id="subjectsWrap" class="hidden">
+      <label>Choose Subjects</label><div id="subjects" class="subjects"></div>
+      <div class="actions"><button class="primary" id="generate">Generate Invoice</button><button class="secondary" id="reset">Reset</button></div>
+    </div>
+    <p id="message" class="muted"></p>
+  </section>
+
+  <section class="card">
+    <h2>Tuition Schedule</h2>
+    <div id="schedule"></div>
+  </section>
+
+  <section class="card full">
+    <h2>Generated Invoice</h2>
+    <div id="invoice" class="invoice">Complete the registration form to generate an invoice.</div>
+  </section>
+
+  <section class="card full">
+    <h2>Malaysian Public Holidays</h2>
+    <div id="holidays"></div>
+  </section>
+</div>
+
+  <footer>Portfolio demo mode · Built from the original coursework logic</footer>
+</div>
+<script src="demo.js"></script>
+</body></html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=d5a12617-9d11-496f-ae0f-f19daa7fa311
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. --><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Student Management System · Edward Lau Portfolio</title>
+<link rel="stylesheet" href="demo.css">
+</head>
+<body>
+<div class="shell">
+  <div class="topbar">
+    <div class="brand"><span class="brand-mark">EL</span><span>Edward Lau · Project Demo</span></div>
+    <a class='back' href='/projects'>← Back to Projects</a>
+  </div>
+  
+<section class="hero">
+  <span class="eyebrow">Python / Data Management · Live Demo Mode</span>
+  <h1>Student <span class="grad">Management System</span></h1>
+  <p class="muted">Interactive version of my Python assignment for student records, mark validation, grade conversion, partial-name search and summary statistics.</p>
+</section>
+
+<div class="grid">
+  <section class="card">
+    <h2>Add Student</h2>
+    <label>Student Name</label><input id="studentName" placeholder="e.g. Nicole Lee">
+    <label>Marks (0–100)</label><input id="marks" type="number" min="0" max="100" placeholder="e.g. 86">
+    <div class="actions"><button class="primary" id="add">Add Student</button><button class="secondary" id="sample">Load Sample Data</button><button class="danger" id="clear">Clear All</button></div>
+    <p id="status" class="muted"></p>
+  </section>
+  <section class="card">
+    <h2>Student Search</h2>
+    <label>Search by name</label><input id="search" placeholder="Partial name is supported">
+    <div id="searchResults" class="list" style="margin-top:14px"></div>
+  </section>
+
+  <section class="card full">
+    <h2>Student Records</h2>
+    <div id="records"></div>
+  </section>
+
+  <section class="card full">
+    <h2>Summary Report</h2>
+    <div class="kpi-grid">
+      <div class="kpi-box"><div class="kpi" id="total">0</div><div class="kpi-label">Total Students</div></div>
+      <div class="kpi-box"><div class="kpi" id="average">0.00</div><div class="kpi-label">Average Marks</div></div>
+      <div class="kpi-box"><div class="kpi" id="highest">—</div><div class="kpi-label">Highest</div></div>
+      <div class="kpi-box"><div class="kpi" id="lowest">—</div><div class="kpi-label">Lowest</div></div>
+    </div>
+    <div id="distribution" class="chips" style="margin-top:18px"></div>
+  </section>
+</div>
+
+  <footer>Portfolio demo mode · Built from the original coursework logic</footer>
+</div>
+<script src="demo.js"></script>
+</body></html>

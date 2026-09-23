@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=d5a12617-9d11-496f-ae0f-f19daa7fa311
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container dashboard">
+    <h2>Welcome 🎉</h2>
+    <p>You have successfully logged in.</p>
+    <button onclick="logout()">Logout</button>
+</div>
+
+<script>
+function logout() {
+    localStorage.clear();     
+    window.location.href = "login.html";
+}
+
+if (localStorage.getItem("isLoggedIn") !== "true") {
+    window.location.href = "login.html";
+}
+
+const username = localStorage.getItem("username");
+if (username) {
+    document.querySelector("h2").innerText = `Welcome ${username} 🎉`;
+}
+</script>
+
+</body>
+</html>

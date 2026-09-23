@@ -1,0 +1,159 @@
+
+============================================================
+             EDWARD BUSINESS RECEIPT SYSTEM
+============================================================
+1. View product catalog
+2. Add product to cart
+3. View cart
+4. Update item quantity
+5. Remove item from cart
+6. Checkout & generate receipt
+7. Exit
+
+Choose an option (1-7): 
+============================================================
+             EDWARD BUSINESS RECEIPT SYSTEM
+============================================================
+ID    Product                       Price (RM)
+----------------------------------------------
+1     Notebook                            8.90
+2     Gel Pen Set                        12.50
+3     USB-C Cable                        19.90
+4     Wireless Mouse                     39.90
+5     Laptop Stand                       59.90
+6     Power Bank                         79.90
+7     Mechanical Keyboard               129.90
+8     Bluetooth Speaker                 149.90
+
+Discount: 5% for RM100+, 10% for RM200+
+Demo service tax: 6% after discount.
+
+Enter product ID to add (1-8): Enter quantity (1-99): Wireless Mouse added to cart.
+
+Press Enter to continue...
+============================================================
+             EDWARD BUSINESS RECEIPT SYSTEM
+============================================================
+1. View product catalog
+2. Add product to cart
+3. View cart
+4. Update item quantity
+5. Remove item from cart
+6. Checkout & generate receipt
+7. Exit
+
+Choose an option (1-7): 
+============================================================
+             EDWARD BUSINESS RECEIPT SYSTEM
+============================================================
+ID    Product                       Price (RM)
+----------------------------------------------
+1     Notebook                            8.90
+2     Gel Pen Set                        12.50
+3     USB-C Cable                        19.90
+4     Wireless Mouse                     39.90
+5     Laptop Stand                       59.90
+6     Power Bank                         79.90
+7     Mechanical Keyboard               129.90
+8     Bluetooth Speaker                 149.90
+
+Discount: 5% for RM100+, 10% for RM200+
+Demo service tax: 6% after discount.
+
+Enter product ID to add (1-8): Enter quantity (1-99): Mechanical Keyboard added to cart.
+
+Press Enter to continue...
+============================================================
+             EDWARD BUSINESS RECEIPT SYSTEM
+============================================================
+1. View product catalog
+2. Add product to cart
+3. View cart
+4. Update item quantity
+5. Remove item from cart
+6. Checkout & generate receipt
+7. Exit
+
+Choose an option (1-7): 
+============================================================
+             EDWARD BUSINESS RECEIPT SYSTEM
+============================================================
+ID   Product                      Price     Qty    Line Total
+-------------------------------------------------------------
+4    Wireless Mouse               39.90       2         79.80
+7    Mechanical Keyboard         129.90       1        129.90
+-------------------------------------------------------------
+                                  Subtotal: RM     209.70
+                                  Discount: RM      20.97
+                               Service tax: RM      11.32
+                           Estimated total: RM     200.05
+
+Press Enter to continue...
+============================================================
+             EDWARD BUSINESS RECEIPT SYSTEM
+============================================================
+1. View product catalog
+2. Add product to cart
+3. View cart
+4. Update item quantity
+5. Remove item from cart
+6. Checkout & generate receipt
+7. Exit
+
+Choose an option (1-7): 
+============================================================
+             EDWARD BUSINESS RECEIPT SYSTEM
+============================================================
+ID   Product                      Price     Qty    Line Total
+-------------------------------------------------------------
+4    Wireless Mouse               39.90       2         79.80
+7    Mechanical Keyboard         129.90       1        129.90
+-------------------------------------------------------------
+                                  Subtotal: RM     209.70
+                                  Discount: RM      20.97
+                               Service tax: RM      11.32
+                           Estimated total: RM     200.05
+
+Customer name (press Enter for walk-in): 
+Payment method
+1. Cash
+2. Card
+3. E-Wallet
+Choose payment method (1-3): 
+============================================================
+                 EDWARD BUSINESS RECEIPT
+============================================================
+Receipt No : TX1001
+Date/Time  : 2026-09-18 08:14:19
+Customer   : Edward Lau
+Payment    : E-Wallet
+------------------------------------------------------------
+Item                        Price    Qty       Amount
+------------------------------------------------------------
+Wireless Mouse              39.90      2        79.80
+Mechanical Keyboard        129.90      1       129.90
+------------------------------------------------------------
+                                  Subtotal: RM     209.70
+                                     Discount (10%): RM      20.97
+                          Service tax (6%): RM      11.32
+                                     TOTAL: RM     200.05
+============================================================
+           Thank you. Have a great day!
+============================================================
+Receipt saved to receipts/Receipt_TX1001.txt
+Transaction completed. Cart has been cleared.
+
+Press Enter to continue...
+============================================================
+             EDWARD BUSINESS RECEIPT SYSTEM
+============================================================
+1. View product catalog
+2. Add product to cart
+3. View cart
+4. Update item quantity
+5. Remove item from cart
+6. Checkout & generate receipt
+7. Exit
+
+Choose an option (1-7): 
+System closed. Thank you!

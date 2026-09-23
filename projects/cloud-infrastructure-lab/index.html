@@ -1,0 +1,109 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=d5a12617-9d11-496f-ae0f-f19daa7fa311
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. --><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cloud Infrastructure Lab · Edward Lau Portfolio</title>
+<link rel="stylesheet" href="demo.css">
+</head>
+<body>
+<div class="shell">
+  <div class="topbar">
+    <div class="brand"><span class="brand-mark">☁</span><span>Edward Lau · Cloud Lab</span></div>
+    <a class='back' href='/projects'>← Back to Projects</a>
+  </div>
+
+  <section class="hero">
+    <span class="eyebrow">Cloud Computing · Interactive Lab Walkthrough</span>
+    <h1>Cloud Infrastructure <span class="grad">Lab</span></h1>
+    <p class="muted">A portfolio demonstration of the cloud concepts I practised: virtual machines, Cloud Storage, service models and foundational security responsibilities.</p>
+    <div class="note">This is an interactive portfolio simulation. It does not create real Google Cloud resources or incur cloud charges.</div>
+    <div style="margin-top:18px">
+      <div style="display:flex;justify-content:space-between;gap:12px;margin-bottom:8px">
+        <strong>Lab Progress</strong><span id="progressText">0%</span>
+      </div>
+      <div class="progress"><span id="progressBar"></span></div>
+    </div>
+  </section>
+
+  <div class="grid">
+    <section class="card">
+      <span class="eyebrow">Exercise 01</span>
+      <h2>Create a VM Instance</h2>
+      <div class="row">
+        <div><label>VM Name</label><input id="vmName" placeholder="edward-lab-vm"></div>
+        <div><label>Region</label><select id="region"><option>asia-southeast1</option><option>asia-east1</option><option>us-central1</option></select></div>
+        <div><label>Machine Type</label><select id="machine"><option>e2-micro</option><option>e2-small</option><option>e2-medium</option></select></div>
+        <div><label>Operating System</label><select id="os"><option>Debian Linux</option><option>Ubuntu Linux</option><option>Windows Server</option></select></div>
+      </div>
+      <div class="actions"><button class="primary" id="createVM">Create VM</button></div>
+      <p id="vmStatus" class="muted"></p>
+      <pre id="vmResult">Configure the VM and click Create VM.</pre>
+    </section>
+
+    <section class="card">
+      <span class="eyebrow">Exercise 02</span>
+      <h2>Cloud Storage Bucket</h2>
+      <label>Bucket Name</label><input id="bucketName" placeholder="edward-cloud-lab-bucket">
+      <label>Location</label><select id="bucketLocation"><option>Asia</option><option>Singapore</option><option>US</option></select>
+      <div class="actions"><button class="primary" id="createBucket">Create Bucket & Upload File</button></div>
+      <p id="bucketStatus" class="muted"></p>
+      <pre id="bucketResult">Configure the bucket and click Create Bucket.</pre>
+    </section>
+
+    <section class="card full">
+      <span class="eyebrow">Architecture</span>
+      <h2>Simple Cloud Lab Flow</h2>
+      <div class="arch">
+        <div class="box"><strong>User / Browser</strong><div class="muted">Access & configure</div></div>
+        <div class="arrow">→</div>
+        <div class="box"><strong>Compute Engine VM</strong><div class="muted">Virtual machine / IaaS</div></div>
+        <div class="arrow">→</div>
+        <div class="box"><strong>Cloud Storage</strong><div class="muted">Bucket / object storage</div></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <span class="eyebrow">Exercise 03</span>
+      <h2>Service Models</h2>
+      <div class="actions">
+        <button class="secondary" data-model="IaaS">IaaS</button>
+        <button class="secondary" data-model="PaaS">PaaS</button>
+        <button class="secondary" data-model="SaaS">SaaS</button>
+      </div>
+      <p id="modelText" class="muted">Choose a service model to see the responsibility split.</p>
+    </section>
+
+    <section class="card">
+      <span class="eyebrow">Exercise 04</span>
+      <h2>Security Checklist</h2>
+      <div class="checks">
+        <label class="check"><input class="security-check" type="checkbox"><span><strong>Strong authentication</strong><span class="muted">Use strong passwords and account controls.</span></span></label>
+        <label class="check"><input class="security-check" type="checkbox"><span><strong>Least privilege</strong><span class="muted">Give only the access required.</span></span></label>
+        <label class="check"><input class="security-check" type="checkbox"><span><strong>Data protection</strong><span class="muted">Protect sensitive cloud data and storage access.</span></span></label>
+        <label class="check"><input class="security-check" type="checkbox"><span><strong>Monitoring</strong><span class="muted">Review logs and unusual activity.</span></span></label>
+      </div>
+      <div style="margin-top:12px" class="chips"><span class="chip">Completed: <strong id="securityCount">0/4</strong></span></div>
+    </section>
+
+    <section class="card full">
+      <span class="eyebrow">Learning Summary</span>
+      <h2>What this lab demonstrates</h2>
+      <div class="kpi-grid">
+        <div class="kpi"><strong>VM</strong><span class="small">Compute</span></div>
+        <div class="kpi"><strong>Bucket</strong><span class="small">Storage</span></div>
+        <div class="kpi"><strong>IaaS / PaaS / SaaS</strong><span class="small">Service Models</span></div>
+        <div class="kpi"><strong id="completed">0/7</strong><span class="small">Lab Steps</span></div>
+      </div>
+      <div class="actions"><button class="secondary" id="resetLab">Reset Lab</button></div>
+    </section>
+  </div>
+
+  <footer>Interactive portfolio lab · Simulated for demonstration</footer>
+</div>
+<script src="demo.js"></script>
+</body>
+</html>

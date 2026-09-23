@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="500" viewBox="0 0 1100 500">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#19d8ff"/><stop offset=".48" stop-color="#7c5cff"/><stop offset="1" stop-color="#ff4fa3"/></linearGradient></defs>
+  <rect width="1100" height="500" rx="30" fill="#07111f"/>
+  <g font-family="Arial, sans-serif" text-anchor="middle" fill="#fff">
+    <rect x="430" y="52" width="240" height="84" rx="20" fill="url(#g)"/><text x="550" y="88" font-size="23" font-weight="700">HOME</text><text x="550" y="113" font-size="13">index.html</text>
+    <path d="M550 136V220M155 220H945M155 220V270M355 220V270M550 220V270M745 220V270M945 220V270" stroke="#6f82a1" stroke-width="4" fill="none"/>
+    <g font-size="18" font-weight="700"><rect x="65" y="270" width="180" height="85" rx="18" fill="#11213a" stroke="#19d8ff"/><text x="155" y="306">ABOUT</text><text x="155" y="332" font-size="12" fill="#a9b8cc">about.html</text><rect x="265" y="270" width="180" height="85" rx="18" fill="#11213a" stroke="#7c5cff"/><text x="355" y="306">PROJECTS</text><text x="355" y="332" font-size="12" fill="#a9b8cc">projects.html</text><rect x="460" y="270" width="180" height="85" rx="18" fill="#11213a" stroke="#ffd83d"/><text x="550" y="306">SKILLS</text><text x="550" y="332" font-size="12" fill="#a9b8cc">skills.html</text><rect x="655" y="270" width="180" height="85" rx="18" fill="#11213a" stroke="#ff8a3d"/><text x="745" y="306">RESUME</text><text x="745" y="332" font-size="12" fill="#a9b8cc">inside skills.html</text><rect x="855" y="270" width="180" height="85" rx="18" fill="#11213a" stroke="#ff4fa3"/><text x="945" y="306">CONTACT</text><text x="945" y="332" font-size="12" fill="#a9b8cc">contact.html</text></g>
+    <text x="550" y="430" font-size="14" fill="#a9b8cc">All five pages use the same navigation, theme and responsive design system.</text>
+  </g>
+</svg>

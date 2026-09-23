@@ -1,31 +1,136 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+
+<html data-theme="dark" lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
-<meta content="Edward Lau — Diploma in Information Technology student portfolio for internship applications, showcasing web development, programming, cloud computing, AI and cybersecurity projects." name="description"/>
-<meta content="#080b16" name="theme-color"/>
-<meta content="Edward Lau — IT Internship Portfolio" property="og:title"/>
-<meta content="Projects, technical skills, leadership experience and contact information for internship opportunities." property="og:description"/>
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=d5a12617-9d11-496f-ae0f-f19daa7fa311
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+<meta content="Edward Lau's IT internship portfolio showcasing web development, UI/UX, AI, programming, cloud computing and full-stack projects." name="description"/>
+<meta content="#070b18" name="theme-color"/>
+<meta content="Edward Lau | IT Internship Portfolio" property="og:title"/>
+<meta content="Edward Lau's IT internship portfolio showcasing web development, UI/UX, AI, programming, cloud computing and full-stack projects." property="og:description"/>
 <meta content="website" property="og:type"/>
-<title>Edward Lau | IT Internship Portfolio</title>
-<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="css/style.css" rel="stylesheet"/>
-</head>
-<body class="page-enter">
+<meta content="Edward Lau Portfolio" property="og:site_name"/>
+<meta content="https://edwardlaujx-portfolio.netlify.app/assets/og-preview.png" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Edward Lau | IT Internship Portfolio" name="twitter:title"/>
+<meta content="Edward Lau's IT internship portfolio showcasing web development, UI/UX, AI, programming, cloud computing and full-stack projects." name="twitter:description"/>
+<meta content="https://edwardlaujx-portfolio.netlify.app/assets/og-preview.png" name="twitter:image"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/><script>try{if(sessionStorage.getItem('edwardIntroSeen')==='1')document.documentElement.classList.add('intro-seen')}catch(_){}</script>
+<link href="https://edwardlaujx-portfolio.netlify.app/" rel="canonical"/><meta content="https://edwardlaujx-portfolio.netlify.app/" property="og:url"/><meta content="index, follow, max-image-preview:large" name="robots"/><title>Edward Lau | IT Internship Portfolio</title><link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/><link href="css/style.css?v=send-success-1" rel="stylesheet"/><script defer="True" src="js/home-intro.js?v=send-success-1"></script><script defer="True" src="js/page-content-final.js?v=send-success-1"></script><script defer="True" src="js/script-mp3-final.js?v=send-success-1"></script></head>
+<body class="page-enter" data-page="home">
+<div aria-label="Portfolio introduction" aria-modal="true" class="keynote-intro keynote-waiting" id="keynoteIntro" role="dialog">
+<div aria-hidden="true" class="keynote-glow keynote-glow-a"></div>
+<div aria-hidden="true" class="keynote-glow keynote-glow-b"></div>
+<div aria-hidden="true" class="keynote-sweep"></div>
+<div class="keynote-stage">
+<div class="keynote-kicker">EDWARD LAU · PORTFOLIO 2026</div>
+<div aria-hidden="true" class="keynote-mark"><span>EL</span></div>
+<div aria-level="2" class="keynote-title" role="heading">Ideas become<br/><span>experiences.</span></div>
+<p class="keynote-subtitle">UI · INTERACTION · TECHNOLOGY</p>
+</div>
+<div aria-hidden="true" class="keynote-progress"><span></span></div>
+<button aria-label="Skip intro animation" class="keynote-skip" id="keynoteSkip" type="button">Skip intro</button>
+</div>
 <a class="skip-link" href="#main">Skip to content</a>
-<div class="scroll-progress" id="scrollProgress"></div>
-<div aria-hidden="true" class="ambient"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span><span id="particles"></span></div>
+<div aria-hidden="true" class="ambient"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><div id="particles"></div></div>
 <div aria-hidden="true" class="cursor-glow" id="cursorGlow"></div>
-<header class="site-header" id="siteHeader"><div class="container nav"><a aria-label="Edward Lau home" class="brand" href="index.html"><span class="brand-mark">EL</span><span>Edward Lau</span></a><nav aria-label="Primary navigation"><ul class="nav-links" id="navLinks"><li><a class="nav-link" href="index.html">Home</a></li><li><a class="nav-link" href="about.html">About</a></li><li><a class="nav-link" href="projects.html">Projects</a></li><li><a class="nav-link" href="skills.html">Skills &amp; Resume</a></li><li><a class="nav-link" href="contact.html">Contact</a></li></ul></nav><div class="nav-actions"><button aria-label="Toggle colour theme" class="icon-btn" id="themeToggle" type="button">☼</button><button aria-controls="navLinks" aria-expanded="false" aria-label="Open menu" class="icon-btn menu-btn" id="menuToggle" type="button">☰</button></div></div></header>
+<header class="site-header">
+<div class="container nav">
+<a aria-label='Edward Lau home' class='brand' href='/'><span class="brand-mark">EL</span><span>Edward Lau</span></a>
+<ul class="nav-links" id="navLinks">
+<li><a aria-current='page' class='nav-link' data-nav='home' href='/'>Home</a></li>
+<li><a class='nav-link' data-nav='about' href='/about'>About</a></li>
+<li><a class='nav-link' data-nav='projects' href='/projects'>Projects</a></li>
+<li><a class='nav-link' data-nav='skills' href='/skills'>Skills &amp; Resume</a></li>
+<li><a class='nav-link' data-nav='contact' href='/contact'>Contact</a></li>
+</ul>
+<div class="nav-actions">
+<button aria-label="Toggle theme" class="icon-btn" id="themeToggle" type="button">☀</button>
+<button aria-expanded="false" aria-label="Open menu" class="icon-btn menu-btn" id="menuBtn" type="button">☰</button>
+</div>
+</div>
+</header>
 <main id="main">
-<section class="hero"><div class="container hero-grid"><div class="hero-copy reveal"><span class="eyebrow">Diploma in IT · Open to Internship</span><h1 class="title-xl">Designing practical<br/><span class="gradient-text">digital experiences.</span></h1><p class="lead">I am a Diploma in Information Technology student at FAME International College with a strong interest in <strong>UI design, interactive experiences and practical problem solving</strong>. Alongside developing my foundation in <strong>web development, programming, AI, cloud computing and cybersecurity</strong>, I enjoy turning ideas into clear, engaging and user-focused digital solutions.</p><div class="hero-actions"><a class="btn btn-primary" href="projects.html">View Selected Projects ↗</a><a class="btn btn-secondary" href="skills.html">Skills &amp; Resume →</a></div><div class="hero-meta"><span class="chip">● Open to Internship Opportunities</span><span class="chip">⚡ UI · Web · Digital Solutions</span><span class="chip">📍 Kuching, Sarawak</span></div></div><div class="hero-visual reveal delay-1"><div class="profile-card tilt"><div class="profile-top"><span>PORTFOLIO / 2026</span><strong>Edward Lau</strong><span class="status-pill">● Available</span></div><div class="avatar"><div class="avatar-logo">EL</div><span>CREATIVE TECHNOLOGY</span></div><div class="profile-foot">Edward Lau · IT Internship Portfolio</div></div><div class="float-card f1">🎨 UI · Interaction · Web</div><div class="float-card f2">⚙️ Programming · AI</div><div class="float-card f3">☁️ Cloud · Cybersecurity</div></div></div></section>
-<div aria-label="Skills marquee" class="marquee"><div class="marquee-track"><span>UI Design <b>✦</b> Interaction Design <b>✦</b> Web Development <b>✦</b> Problem Solving <b>✦</b> HTML <b>✦</b> CSS <b>✦</b> JavaScript <b>✦</b> C++ <b>✦</b> Python <b>✦</b> Cloud Computing <b>✦</b> Cybersecurity <b>✦</b> Leadership <b>✦</b></span><span aria-hidden="true">UI Design <b>✦</b> Interaction Design <b>✦</b> Web Development <b>✦</b> Problem Solving <b>✦</b> HTML <b>✦</b> CSS <b>✦</b> JavaScript <b>✦</b> C++ <b>✦</b> Python <b>✦</b> Cloud Computing <b>✦</b> Cybersecurity <b>✦</b> Leadership <b>✦</b></span><span aria-hidden="true">UI Design <b>✦</b> Interaction Design <b>✦</b> Web Development <b>✦</b> Problem Solving <b>✦</b> HTML <b>✦</b> CSS <b>✦</b> JavaScript <b>✦</b> C++ <b>✦</b> Python <b>✦</b> Cloud Computing <b>✦</b> Cybersecurity <b>✦</b> Leadership <b>✦</b></span><span aria-hidden="true">UI Design <b>✦</b> Interaction Design <b>✦</b> Web Development <b>✦</b> Problem Solving <b>✦</b> HTML <b>✦</b> CSS <b>✦</b> JavaScript <b>✦</b> C++ <b>✦</b> Python <b>✦</b> Cloud Computing <b>✦</b> Cybersecurity <b>✦</b> Leadership <b>✦</b></span></div></div>
-<section class="section-sm"><div class="container grid stats"><article class="card stat reveal"><small class="muted">Featured projects</small><strong data-counter="6">6</strong></article><article class="card stat reveal delay-1"><small class="muted">Skills &amp; capabilities</small><strong data-counter="8">8</strong></article><article class="card stat reveal delay-2"><small class="muted">Leadership roles</small><strong data-counter="2">2</strong></article><article class="card stat reveal delay-3"><small class="muted">Student organisations</small><strong data-counter="2">2</strong></article></div></section>
-<section class="section"><div class="container"><div class="section-heading reveal"><div><span class="eyebrow">Selected work</span><h2 class="title-lg">Projects that show<br/>how I <span class="gradient-text">think &amp; build.</span></h2></div><p>Selected work that reflects how I combine visual thinking, practical implementation and problem solving to turn ideas into digital experiences.</p></div><div class="grid project-grid home-projects"><article class="card card-hover project-card reveal"><div class="project-art art-web"><span class="art-icon">🌐</span></div><div class="project-body"><span class="eyebrow">WEB / UI DESIGN</span><h3>Personal Internship Portfolio Website</h3><p>A responsive portfolio designed to present my projects, skills, leadership experience and internship profile through a user-focused interactive interface.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>UI Design</span></div><a class="text-link" href="projects.html">View case study →</a></div></article><article class="card card-hover project-card reveal delay-1"><div class="project-art art-ai"><span class="art-icon">🤖</span></div><div class="project-body"><span class="eyebrow">AI / WEB</span><h3>CampusAI Student Assistant</h3><p>A student-focused AI assistant interface designed around campus FAQs, quick access to information and interactive responses.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Gemini</span></div><a class="text-link" href="projects.html">View case study →</a></div></article><article class="card card-hover project-card reveal delay-2"><div class="project-art art-event"><span class="art-icon">✦</span></div><div class="project-body"><span class="eyebrow">UI / UX DESIGN</span><h3>Interactive UI Prototype</h3><p>Interactive Figma prototypes exploring visual hierarchy, navigation flow, user interaction and interface experience.</p><div class="tags"><span>Figma</span><span>UI / UX</span><span>Prototype</span><span>Interaction</span></div><a class="text-link" href="projects.html">View case study →</a></div></article></div></div></section>
-<section class="section-sm"><div class="container card cta reveal"><div><span class="eyebrow">Professional profile</span><h2 class="title-md">Discover my background, strengths &amp; experience.</h2><p>Learn more about my education, leadership experience, community involvement, working style and the skills I am continuing to develop for an IT internship.</p></div><a class="btn btn-primary" href="about.html">About Edward →</a></div></section>
+<section class="hero">
+<div class="container hero-grid">
+<div class="hero-copy reveal visible">
+<span class="eyebrow">Diploma in IT · Open to Internship</span>
+<h1 class="title-xl">Designing practical<br/><span class="gradient-text">digital experiences.</span></h1>
+<p class="lead">I am a Diploma in Information Technology student who enjoys turning ideas into clear, interactive digital experiences. My work combines <strong>UI design, web development and practical problem solving</strong>, supported by growing experience in programming, AI, cloud computing and cybersecurity. I am currently open to internship opportunities where I can contribute and keep learning.</p>
+<div class="hero-actions">
+<a class='btn btn-primary' href='/projects'>View Selected Projects <span aria-hidden="true">↗</span></a>
+<a class='btn btn-secondary' href='/skills#resume'>Skills &amp; Resume <span aria-hidden="true">→</span></a>
+<a class="btn btn-resume" data-direct-resume="true" href="assets/Edward-Lau-Resume.pdf" rel="noopener" target="_blank">Resume PDF <span aria-hidden="true">↓</span></a></div>
+<div class="hero-meta">
+<span class="chip"><span class="dot"></span> Open to Internship Opportunities</span>
+<span class="chip">⚡ UI · Web · Digital Solutions</span>
+<span class="chip">📍 Kuching, Sarawak</span>
+</div>
+</div>
+<div class="hero-visual reveal delay-2">
+<div class="profile-card tilt">
+<div class="avatar"><div class="avatar-note">Edward Lau · IT Internship Portfolio</div></div>
+<div class="profile-bottom">
+<div><small class="muted">INTERNSHIP PORTFOLIO / 2026</small><br/><strong>Edward Lau</strong></div>
+<span class="status-pill">● Available</span>
+</div>
+</div>
+<div class="float-card f1">🎨 UI · Interaction · Web</div>
+<div class="float-card f2">⚙️ Programming · AI</div>
+<div class="float-card f3">☁️ Cloud · Cybersecurity</div>
+</div>
+</div>
+</section>
+<div aria-label="Skills marquee" class="marquee">
+<div class="marquee-track">
+<span>UI Design <b>✦</b> Interaction Design <b>✦</b> Web Development <b>✦</b> Problem Solving <b>✦</b> HTML <b>✦</b> CSS <b>✦</b> JavaScript <b>✦</b> C++ <b>✦</b> Python <b>✦</b> Cloud Computing <b>✦</b> Cybersecurity <b>✦</b> Client Project Delivery <b>✦</b> Leadership <b>✦</b></span>
+<span aria-hidden="true">UI Design <b>✦</b> Interaction Design <b>✦</b> Web Development <b>✦</b> Problem Solving <b>✦</b> HTML <b>✦</b> CSS <b>✦</b> JavaScript <b>✦</b> C++ <b>✦</b> Python <b>✦</b> Cloud Computing <b>✦</b> Cybersecurity <b>✦</b> Client Project Delivery <b>✦</b> Leadership <b>✦</b></span>
+<span aria-hidden="true">UI Design <b>✦</b> Interaction Design <b>✦</b> Web Development <b>✦</b> Problem Solving <b>✦</b> HTML <b>✦</b> CSS <b>✦</b> JavaScript <b>✦</b> C++ <b>✦</b> Python <b>✦</b> Cloud Computing <b>✦</b> Cybersecurity <b>✦</b> Client Project Delivery <b>✦</b> Leadership <b>✦</b></span>
+<span aria-hidden="true">UI Design <b>✦</b> Interaction Design <b>✦</b> Web Development <b>✦</b> Problem Solving <b>✦</b> HTML <b>✦</b> CSS <b>✦</b> JavaScript <b>✦</b> C++ <b>✦</b> Python <b>✦</b> Cloud Computing <b>✦</b> Cybersecurity <b>✦</b> Client Project Delivery <b>✦</b> Leadership <b>✦</b></span>
+</div>
+</div>
+<section class="section-sm">
+<div class="container grid stats">
+<article class="card stat reveal"><small class="muted">Featured projects</small><strong data-counter="9">9</strong></article>
+<article class="card stat reveal delay-1"><small class="muted">Skills &amp; capabilities</small><strong data-counter="9">9</strong></article>
+<article class="card stat reveal delay-2"><small class="muted">Leadership roles</small><strong data-counter="2">2</strong></article>
+<article class="card stat reveal delay-3"><small class="muted">Student organisations</small><strong data-counter="2">2</strong></article>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div class="section-heading reveal">
+<div><span class="eyebrow">Selected work</span><h2 class="title-lg">Projects that show<br/>how I <span class="gradient-text">think &amp; build.</span></h2></div>
+<p>Selected work that reflects how I combine visual thinking, practical implementation and problem solving to turn ideas into digital experiences.</p>
+</div>
+<div class="grid project-grid">
+<article class="card card-hover project-card reveal tilt">
+<div class="project-art art-client"><span class="art-icon">🧠</span><span class="project-proof">CLIENT / LIVE</span></div>
+<div class="project-body"><small class="eyebrow">Client / Community Web Project</small><h3>Empower Counselling Website &amp; Admin CMS</h3><p>A live counselling website and protected admin CMS delivered for client handoff, allowing independent content updates and programme-to-WhatsApp enquiries.</p><div class="tags"><span class="tag">Web</span><span class="tag">CMS</span><span class="tag">Netlify</span><span class="tag">Client Delivery</span></div></div>
+<div class="project-footer project-footer-actions"><a class='text-link' href='/projects#empower-project'>View project overview →</a><a class="text-link live-demo-link" href="https://empower-bensonlim-kuching.netlify.app/" rel="noopener" target="_blank">Live Website ↗</a></div>
+</article>
+<article class="card card-hover project-card reveal delay-1 tilt">
+<div class="project-art art-campusai"><span class="art-icon">🤖</span><span class="project-proof">LIVE / INTERACTIVE</span></div>
+<div class="project-body"><small class="eyebrow">AI / Web Development</small><h3>CampusAI Student Assistant</h3><p>A student-focused AI assistant interface designed around campus FAQs, quick access to information and interactive responses.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Gemini</span></div></div>
+<div class="project-footer project-footer-actions"><a class='text-link' href='/projects'>View project overview →</a><a aria-label="Launch CampusAI live demo in a new tab" class="text-link live-demo-link" href="https://ai.studio/apps/aa67a5a6-aad4-4156-8a45-962f734e55b6" rel="noopener" target="_blank">Launch Live Demo ↗</a></div>
+</article>
+<article class="card card-hover project-card reveal delay-2 tilt">
+<div class="project-art art-uiux"><span class="art-icon">✦</span><span class="project-proof">LIVE / INTERACTIVE</span></div>
+<div class="project-body"><small class="eyebrow">UI / UX Design</small><h3>Interactive UI Prototype</h3><p>Interactive Figma prototypes exploring visual hierarchy, navigation flow, user interaction and overall interface experience.</p><div class="tags"><span class="tag">Figma</span><span class="tag">UI / UX</span><span class="tag">Prototype</span><span class="tag">Interaction</span></div></div>
+<div class="project-footer project-footer-actions"><a class='text-link' href='/projects'>View project overview →</a><a aria-label="Play interactive UI prototype in a new tab" class="text-link live-demo-link" href="https://www.figma.com/proto/rqUBo8BKua4b8btSMxX131/Edward-Lau-Portfolio-UI-Prototype?node-id=2-2&amp;starting-point-node-id=2%3A2&amp;scaling=scale-down&amp;content-scaling=fixed&amp;page-id=0%3A1" rel="noopener" target="_blank">Play Prototype ↗</a></div>
+</article>
+</div>
+</div>
+</section>
+<section class="section-sm">
+<div class="container card cta reveal">
+<div><span class="eyebrow">Professional profile</span><h2 class="title-md">Discover my background, strengths &amp; experience.</h2><p>Learn more about my education, leadership experience, community involvement, working style and the skills I am continuing to develop for an IT internship.</p></div>
+<a class='btn btn-primary' href='/about'>About Edward →</a>
+</div>
+</section>
 </main>
-<footer class="footer"><div class="container footer-grid"><p>© <span id="year"></span> Edward Lau. Designed &amp; developed with HTML, CSS &amp; JavaScript.</p><div><a href="contact.html">Contact</a><a href="projects.html">Projects</a><a href="skills.html">Resume</a></div></div></footer>
-<script defer src="js/script.js"></script>
+<footer class="footer"><div class="container footer-row"><span>© <span class="current-year"></span> Edward Lau. Designed &amp; developed with HTML, CSS &amp; JavaScript.</span><div class="footer-links"><a href='/projects'>Projects</a><a href='/skills'>Resume</a><a href='/contact'>Contact</a></div></div></footer>
 </body>
 </html>
