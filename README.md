@@ -1,23 +1,59 @@
 # Edward Lau — IT Internship Portfolio
 
-Responsive five-page personal portfolio built with HTML, CSS and JavaScript and deployed on Netlify.
+A responsive personal portfolio for internship applications, showcasing web development, UI/UX, programming, AI-assisted interfaces, cloud fundamentals, and real client project delivery.
 
-## Highlights
-- Home, About, Projects, Skills & Resume, and Contact pages
-- Recruiter Mode for a quieter, information-first viewing experience
-- Interactive project demos and case-study modals
-- Direct Resume PDF access
-- Netlify Forms contact form with client-side validation and spam honeypot
-- Responsive mobile navigation and reduced-motion support
-- SEO metadata, Open Graph preview, sitemap, robots.txt and Netlify security headers
+## Live Portfolio
 
-## Live site
-https://edwardlaujx-portfolio.netlify.app/
+**Website:** https://edwardlaujx-portfolio.netlify.app/
 
-## Selected project source
-Project source and demos are included under the `projects/` directory.
+## Current Highlights
 
+- Responsive 5-page portfolio: Home, About, Projects, Skills & Resume, and Contact
+- Interactive project cards with reduced-motion support
+- Live / interactive project labels and demos
+- Downloadable one-page resume
+- Netlify Forms contact form with email notification workflow
+- SEO metadata, Open Graph preview, sitemap, robots.txt, and security headers
+- Custom 404 page and mobile-friendly navigation
 
-## UX polish
+## Featured Client Project
 
-The production build includes a one-per-session intro with sound/silent entry choices, persistent music preference, clearer contact-form feedback, a custom 404 page, and reduced-motion support.
+### Empower Counselling Website & Admin CMS
+
+Role: **Project OC & Web Developer**
+
+Delivered a public counselling website and protected admin CMS for client handoff, including:
+- Client-managed content and activity updates
+- Programme-to-WhatsApp enquiry flow
+- Deployment and testing on Netlify
+- Handoff documentation and ownership transfer
+
+Live client site: https://empower-bensonlim-kuching.netlify.app/
+
+## Other Featured Work
+
+- CampusAI Student Assistant
+- Interactive UI / UX Prototype
+- Cloud Infrastructure Lab
+- Full-Stack Login & Registration System
+- Student Management System
+- Tuition Centre Management System
+- Business Calculation & Receipt System
+
+## Technologies
+
+HTML5 · CSS3 · JavaScript · C++ · Python · Flask · Node.js · Express · MySQL · Google Cloud · Gemini · Figma · Netlify
+
+## Source Mirror
+
+This repository is synchronized from the published Netlify portfolio so the source, demos, resume, and project assets stay aligned with the live site.
+
+## Connect
+
+- Portfolio: https://edwardlaujx-portfolio.netlify.app/
+- LinkedIn: https://www.linkedin.com/in/edward-lau-304b00437/
+- GitHub: https://github.com/Jx050512
+
+---
+
+Designed and developed by Edward Lau.
