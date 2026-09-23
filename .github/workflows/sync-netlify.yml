@@ -112,39 +112,12 @@ jobs:
             fi
           done
 
-          cat > _headers <<'EOF'
-/*
-  X-Content-Type-Options: nosniff
-  Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
-  X-Frame-Options: SAMEORIGIN
-
-/assets/*
-  Cache-Control: public, max-age=86400
-EOF
-
-          cat > _redirects <<'EOF'
-/home / 301
-/resume /assets/Edward-Lau-Resume.pdf 301
-EOF
+          printf '%s\n' '/*' '  X-Content-Type-Options: nosniff' '  Referrer-Policy: strict-origin-when-cross-origin' '  Permissions-Policy: camera=(), microphone=(), geolocation=()' '  X-Frame-Options: SAMEORIGIN' '' '/assets/*' '  Cache-Control: public, max-age=86400' > _headers
+          printf '%s\n' '/home / 301' '/resume /assets/Edward-Lau-Resume.pdf 301' > _redirects
 
           mkdir -p projects/fullstack-login-registration
-          cat > projects/fullstack-login-registration/.env.example <<'EOF'
-PORT=3000
-DB_HOST=localhost
-DB_PORT=3306
-DB_USER=root
-DB_PASSWORD=replace_with_your_local_password
-DB_NAME=SCMS_database
-FRONTEND_ORIGINS=http://127.0.0.1:5500,http://localhost:5500
-EOF
-
-          cat > projects/fullstack-login-registration/.gitignore <<'EOF'
-node_modules/
-.env
-*.log
-.DS_Store
-EOF
+          printf '%s\n' 'PORT=3000' 'DB_HOST=localhost' 'DB_PORT=3306' 'DB_USER=root' 'DB_PASSWORD=replace_with_your_local_password' 'DB_NAME=SCMS_database' 'FRONTEND_ORIGINS=http://127.0.0.1:5500,http://localhost:5500' > projects/fullstack-login-registration/.env.example
+          printf '%s\n' 'node_modules/' '.env' '*.log' '.DS_Store' > projects/fullstack-login-registration/.gitignore
 
       - name: Commit synchronized site
         shell: bash
